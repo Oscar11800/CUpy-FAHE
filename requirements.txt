@@ -1,0 +1,24 @@
+# Core dependencies
+Cython>=3.0.0
+numpy>=1.21.1
+matplotlib
+tqdm
+pycuda
+
+# Testing and benchmarking
+pytest>=6.2.4
+pytest-benchmark>=3.4.1
+
+# Additional tools and utilities
+cryptography
+pyclibrary>=0.1.7
+setuptools
+versioneer==0.29
+wheel
+
+# Conditional dependencies
+tomli; python_version < "3.11"
+pywin32; sys_platform == 'win32'
+
+# Additional package index for NVIDIA packages
+--extra-index-url https://pypi.ngc.nvidia.com
